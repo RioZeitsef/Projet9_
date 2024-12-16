@@ -74,6 +74,8 @@
           <div class="carousel-item active">
             <img
               src="./assets/images/slider/walking_roads.jpg"
+              srcset="./assets/images/slider/walking_roads_large.webp 1440w"
+              sizes="(max-width: 1440px), 1440px"
               class="d-block w-100"
               alt="..."
             />
@@ -81,6 +83,8 @@
           <div class="carousel-item">
             <img
               src="./assets/images/slider/concert_crowd.jpg"
+              srcset="./assets/images/slider/concert_crowd_large.webp 1440w"
+              sizes="(max-width: 1440px), 1440px"
               class="d-block w-100"
               alt="..."
               loading="lazy"
@@ -89,6 +93,8 @@
           <div class="carousel-item">
             <img
               src="./assets/images/slider/wedding_dance.jpg"
+              srcset="./assets/images/slider/wedding_dance_large.webp 1440w"
+              sizes="(max-width: 1440px), 1440px"
               class="d-block w-100"
               alt="..."
               loading="lazy"
@@ -120,7 +126,14 @@
     <body>
       <div id="about">
         <div class="picture left">
-          <img src="./assets/images/picture_nina.png" />
+          <img
+            src="./assets/images/picture_nina.png"
+            srcset="
+              ./assets/images/picture_nina_small.webp 320w,
+              ./assets/images/picture_nina_small.webp 460w
+            "
+            sizes="(max-width: 460px) 460px"
+          />
         </div>
         <div id="about-me">
           <h3 class="about-me__title">A propos de moi</h3>
@@ -171,6 +184,12 @@
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/eyes_closed_picture.jpg"
+              srcset="
+                ./assets/images/gallery/portraits/eyes_closed_picture_small.webp 320w,
+                ./assets/images/gallery/portraits/eyes_closed_picture_large.webp 440w
+              "
+              sizes="(max-width: 600px) 320px, 440px"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Mariages"
@@ -181,6 +200,12 @@
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/through_wire_mesh_picture.jpg"
+              srcset="
+                ./assets/images/gallery/portraits/through_wire_mesh_picture_small.webp 320w,
+                ./assets/images/gallery/portraits/through_wire_mesh_picture_large.webp 440w
+              "
+              sizes="(max-width: 600px) 320px, 440px"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Concert"
@@ -293,7 +318,11 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/picture_camera.png" />
+          <img
+            src="./assets/images/picture_camera.png"
+            srcset="./assets/images/picture_camera_small.webp 430w"
+            sizes="(max-width: 430px) 430px"
+          />
         </div>
       </div>
     </div>
