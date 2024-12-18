@@ -95,7 +95,7 @@
             <img
               src="./assets/images/slider/walking_roads.jpg"
               srcset="./assets/images/slider/walking_roads_large.webp 1440w"
-              sizes="(max-width: 1440px), 1440px"
+              sizes="1440px"
               class="d-block w-100"
               alt="Un homme qui traverse la route sur un passage piéton"
             />
@@ -104,7 +104,7 @@
             <img
               src="./assets/images/slider/concert_crowd.jpg"
               srcset="./assets/images/slider/concert_crowd_large.webp 1440w"
-              sizes="(max-width: 1440px), 1440px"
+              sizes="1440px"
               class="d-block w-100"
               alt="Une foule absorbée par un concert"
               loading="lazy"
@@ -114,7 +114,7 @@
             <img
               src="./assets/images/slider/wedding_dance.jpg"
               srcset="./assets/images/slider/wedding_dance_large.webp 1440w"
-              sizes="(max-width: 1440px), 1440px"
+              sizes="1440px"
               class="d-block w-100"
               alt="Un couple qui danse lors d'un mariage"
               loading="lazy"
@@ -143,228 +143,222 @@
     </div>
   </header>
   <main>
-    <body>
-      <div id="about">
-        <div class="picture left">
+    <div id="about">
+      <div class="picture left">
+        <img
+          src="./assets/images/picture_nina.png"
+          srcset="
+            ./assets/images/picture_nina_small.webp 320w,
+            ./assets/images/picture_nina_small.webp 460w
+          "
+          sizes="(max-width: 460px) 460px"
+          alt="Photo de Nina Carducci"
+        />
+      </div>
+      <div id="about-me">
+        <h2 class="about-me__title">A propos de moi</h2>
+        <h3 class="about-me__introduction">
+          Devenir photographe était pour moi une évidence. Comme si j’y étais
+          prédestiné. Saisir un moment, une émotion, une situation, un endroit,
+          une lumière et les rendre immortels, voilà ce qui me fait vibrer.
+        </h3>
+        <p>
+          Nous passons notre vie à chercher le bonheur, et lorsque nous y
+          touchons, nous n’avons qu’une envie : le figer au travers de
+          photographies pour le savourer avec les personnes qui sont importantes
+          à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
+          propose : saisir ces merveilleux moments au travers de mon regard, mon
+          approche, ma technique. Rendre ces moments immortels, afin que vous
+          puissiez y puiser de l’amour, du bonheur, de la tendresse et de
+          lumière à chaque fois que vous poserez les yeux sur vos photos.
+        </p>
+      </div>
+    </div>
+    <div id="gallery">
+      <h3 class="title">Portfolio</h3>
+      <div class="container py-3">
+        <div class="gallery" style="display: none">
           <img
-            src="./assets/images/picture_nina.png"
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            src="./assets/images/gallery/concerts/stage_picture_from_crowd.jpg"
             srcset="
-              ./assets/images/picture_nina_small.webp 320w,
-              ./assets/images/picture_nina_small.webp 460w
+              ./assets/images/gallery/concerts/stage_picture_from_crowd_small.webp 320w,
+              ./assets/images/gallery/concerts/stage_picture_from_crowd_large.webp 440w
             "
-            sizes="(max-width: 460px) 460px"
-            alt="Photo de Nina Carducci"
+            sizes="(max-width: 440px) 320px, 440px"
+            loading="lazy"
+            alt="Photo d'un concert vue depuis la foule"
           />
-        </div>
-        <div id="about-me">
-          <h2 class="about-me__title">A propos de moi</h2>
-          <h3 class="about-me__introduction">
-            Devenir photographe était pour moi une évidence. Comme si j’y étais
-            prédestiné. Saisir un moment, une émotion, une situation, un
-            endroit, une lumière et les rendre immortels, voilà ce qui me fait
-            vibrer.
-          </h3>
-          <p>
-            Nous passons notre vie à chercher le bonheur, et lorsque nous y
-            touchons, nous n’avons qu’une envie : le figer au travers de
-            photographies pour le savourer avec les personnes qui sont
-            importantes à nos yeux, ou le partager au plus grand nombre. C’est
-            ce que je vous propose : saisir ces merveilleux moments au travers
-            de mon regard, mon approche, ma technique. Rendre ces moments
-            immortels, afin que vous puissiez y puiser de l’amour, du bonheur,
-            de la tendresse et de lumière à chaque fois que vous poserez les
-            yeux sur vos photos.
-          </p>
-        </div>
-      </div>
-      <div id="gallery">
-        <h3 class="title">Portfolio</h3>
-        <div class="container py-3">
-          <div class="gallery" style="display: none">
-            <img
-              data-gallery-tag="Concert"
-              class="gallery-item"
-              src="./assets/images/gallery/concerts/stage_picture_from_crowd.jpg"
-              srcset="
-                ./assets/images/gallery/concerts/stage_picture_from_crowd_small.webp 320w,
-                ./assets/images/gallery/concerts/stage_picture_from_crowd_large.webp 440w
-              "
-              sizes="(max-width: 440px) 320px, 440px"
-              loading="lazy"
-              alt="Photo d'un concert vue depuis la foule"
-            />
-            <img
-              data-gallery-tag="Entreprises"
-              class="gallery-item"
-              src="./assets/images/gallery/entreprise/businessman_picture.jpg"
-              srcset="
-                ./assets/images/gallery/entreprise/businessman_picture_small.webp 320w,
-                ./assets/images/gallery/entreprise/businessman_picture_large.webp 440w
-              "
-              sizes="(max-width: 440px) 320px, 440px"
-              loading="lazy"
-              alt="Portrait d'un homme d'affaire aux bras croisés"
-            />
-            <img
-              data-gallery-tag="Entreprises"
-              class="gallery-item"
-              src="./assets/images/gallery/entreprise/team_building_picture.jpg"
-              srcset="
-                ./assets/images/gallery/entreprise/team_building_picture_small.webp 320w,
-                ./assets/images/gallery/entreprise/team_building_picture_large.webp 440w
-              "
-              sizes="(max-width: 440px) 320px, 440px"
-              loading="lazy"
-              alt="Photo d'une équipe en team building"
-            />
-            <img
-              data-gallery-tag="Mariages"
-              class="gallery-item"
-              src="./assets/images/gallery/mariage/holding_hands.jpg"
-              srcset="
-                .assets/images/gallery/mariage/holding_hands_small.webp  320w,
-                ./assets/images/gallery/mariage/holding_hands_large.webp 440w
-              "
-              sizes="(max-width: 440px) 320px, 440px"
-              loading="lazy"
-              alt="Photo de deux mains qui se tiennent"
-            />
-            <img
-              data-gallery-tag="Portrait"
-              class="gallery-item"
-              src="./assets/images/gallery/portraits/eyes_closed_picture.jpg"
-              srcset="
-                ./assets/images/gallery/portraits/eyes_closed_picture_small.webp 320w,
-                ./assets/images/gallery/portraits/eyes_closed_picture_large.webp 440w
-              "
-              sizes="(max-width: 440px) 320px, 440px"
-              loading="lazy"
-              alt="Photo d'un portrait avec les yeux fermés"
-            />
-            <img
-              data-gallery-tag="Mariages"
-              class="gallery-item"
-              src="./assets/images/gallery/mariage/laughing_married.jpg"
-              srcset="
-                .assets/images/gallery/mariage/laughing_married_small.webp  320w,
-                ./assets/images/gallery/mariage/laughing_married_large.webp 440w
-              "
-              sizes="(max-width: 440px) 320px, 440px"
-              loading="lazy"
-              alt="Photo de mariés qui rient mains dans la main"
-            />
-            <img
-              data-gallery-tag="Portrait"
-              class="gallery-item"
-              src="./assets/images/gallery/portraits/through_wire_mesh_picture.jpg"
-              srcset="
-                ./assets/images/gallery/portraits/through_wire_mesh_picture_small.webp 320w,
-                ./assets/images/gallery/portraits/through_wire_mesh_picture_large.webp 440w
-              "
-              sizes="(max-width: 440px) 320px, 440px"
-              loading="lazy"
-              alt="Photo d'un portrait à travers une grille"
-            />
-            <img
-              data-gallery-tag="Concert"
-              class="gallery-item"
-              src="./assets/images/gallery/concerts/singer_on_stage.jpg"
-              srcset="
-                ./assets/images/gallery/concerts/singer_on_stage_small.webp 320w,
-                ./assets/images/gallery/concerts/singer_on_stage_large.webp 440w
-              "
-              sizes="(max-width: 440px) 320px, 440px"
-              loading="lazy"
-              alt="Photo d'un chanteur sur scène"
-            />
-            <img
-              data-gallery-tag="Entreprises"
-              class="gallery-item"
-              src="./assets/images/gallery/entreprise/laughing_office_worker.jpg"
-              srcset="
-                ./assets/images/gallery/entreprise/laughing_office_worker_small.webp 320w,
-                ./assets/images/gallery/entreprise/laughing_office_worker_large.webp 440w
-              "
-              sizes="(max-width: 440px) 320px, 440px"
-              loading="lazy"
-              alt="Photo d'un employé de bureau qui rit"
-            />
-          </div>
-        </div>
-        <div class="quote">
-          <figure>
-            <blockquote>
-              <h1 class="quote__text">
-                Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
-                ou qu’un fait est traduit en photo, il cesse d’être un fait pour
-                devenir une opinion. L’inexactitude n’existe pas en
-                photographie. Toutes les photos sont exactes. Aucune d’elles
-                n’est la vérité.
-              </h1>
-            </blockquote>
-            <figcaption class="quote__author">- Richard Avedon</figcaption>
-          </figure>
-        </div>
-      </div>
-      <div id="services">
-        <h2 class="title">Mes services</h2>
-        <div class="container">
-          <div class="service">
-            <div class="service__description">
-              <h3>Shooting photo</h3>
-              <p>
-                Pour capturer vos moments les plus précieux et garder un
-                souvenir impérissable. Je me déplace en Île-de-France pour
-                réaliser vos photos
-              </p>
-            </div>
-            <div class="service__price">
-              <h4>350€/demi journée</h4>
-              <span>Matériel, déplacement inclus</span>
-            </div>
-          </div>
-          <div class="service">
-            <div class="service__description">
-              <h3>Retouches</h3>
-              <p>
-                Vous souhaitez retoucher vos photos pour un résultat
-                professionnel ? Bénéficier d’un rendu optimal pour vos
-                publications
-              </p>
-            </div>
-            <div class="service__price">
-              <h4>50€/photo</h4>
-              <span>2 AR par photo</span>
-            </div>
-          </div>
-          <div class="service">
-            <div class="service__description">
-              <h3>Album photos</h3>
-              <p>
-                Partagez avec vos proches et vos clients les photos des moments
-                partagés ensemble à travers un album photo personnalisé
-              </p>
-            </div>
-            <div class="service__price">
-              <h4>400€ album A4</h4>
-              <span>30 pages recto/verso</span>
-            </div>
-          </div>
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/gallery/entreprise/businessman_picture.jpg"
+            srcset="
+              ./assets/images/gallery/entreprise/businessman_picture_small.webp 320w,
+              ./assets/images/gallery/entreprise/businessman_picture_large.webp 440w
+            "
+            sizes="(max-width: 440px) 320px, 440px"
+            loading="lazy"
+            alt="Portrait d'un homme d'affaire aux bras croisés"
+          />
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/gallery/entreprise/team_building_picture.jpg"
+            srcset="
+              ./assets/images/gallery/entreprise/team_building_picture_small.webp 320w,
+              ./assets/images/gallery/entreprise/team_building_picture_large.webp 440w
+            "
+            sizes="(max-width: 440px) 320px, 440px"
+            loading="lazy"
+            alt="Photo d'une équipe en team building"
+          />
+          <img
+            data-gallery-tag="Mariages"
+            class="gallery-item"
+            src="./assets/images/gallery/mariage/holding_hands.jpg"
+            srcset="
+              .assets/images/gallery/mariage/holding_hands_small.webp  320w,
+              ./assets/images/gallery/mariage/holding_hands_large.webp 440w
+            "
+            sizes="(max-width: 440px) 320px, 440px"
+            loading="lazy"
+            alt="Photo de deux mains qui se tiennent"
+          />
+          <img
+            data-gallery-tag="Portrait"
+            class="gallery-item"
+            src="./assets/images/gallery/portraits/eyes_closed_picture.jpg"
+            srcset="
+              ./assets/images/gallery/portraits/eyes_closed_picture_small.webp 320w,
+              ./assets/images/gallery/portraits/eyes_closed_picture_large.webp 440w
+            "
+            sizes="(max-width: 440px) 320px, 440px"
+            loading="lazy"
+            alt="Photo d'un portrait avec les yeux fermés"
+          />
+          <img
+            data-gallery-tag="Mariages"
+            class="gallery-item"
+            src="./assets/images/gallery/mariage/laughing_married.jpg"
+            srcset="
+              .assets/images/gallery/mariage/laughing_married_small.webp  320w,
+              ./assets/images/gallery/mariage/laughing_married_large.webp 440w
+            "
+            sizes="(max-width: 440px) 320px, 440px"
+            loading="lazy"
+            alt="Photo de mariés qui rient mains dans la main"
+          />
+          <img
+            data-gallery-tag="Portrait"
+            class="gallery-item"
+            src="./assets/images/gallery/portraits/through_wire_mesh_picture.jpg"
+            srcset="
+              ./assets/images/gallery/portraits/through_wire_mesh_picture_small.webp 320w,
+              ./assets/images/gallery/portraits/through_wire_mesh_picture_large.webp 440w
+            "
+            sizes="(max-width: 440px) 320px, 440px"
+            loading="lazy"
+            alt="Photo d'un portrait à travers une grille"
+          />
+          <img
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            src="./assets/images/gallery/concerts/singer_on_stage.jpg"
+            srcset="
+              ./assets/images/gallery/concerts/singer_on_stage_small.webp 320w,
+              ./assets/images/gallery/concerts/singer_on_stage_large.webp 440w
+            "
+            sizes="(max-width: 440px) 320px, 440px"
+            loading="lazy"
+            alt="Photo d'un chanteur sur scène"
+          />
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/gallery/entreprise/laughing_office_worker.jpg"
+            srcset="
+              ./assets/images/gallery/entreprise/laughing_office_worker_small.webp 320w,
+              ./assets/images/gallery/entreprise/laughing_office_worker_large.webp 440w
+            "
+            sizes="(max-width: 440px) 320px, 440px"
+            loading="lazy"
+            alt="Photo d'un employé de bureau qui rit"
+          />
         </div>
       </div>
       <div class="quote">
         <figure>
           <blockquote>
             <h1 class="quote__text">
-              De manière inconsciente, je crois, je guette un regard, une
-              expression, des traits ou une nostalgie capable de résumer ou plus
-              exactement de révéler une vie
+              Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+              qu’un fait est traduit en photo, il cesse d’être un fait pour
+              devenir une opinion. L’inexactitude n’existe pas en photographie.
+              Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
             </h1>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
-    </body>
+    </div>
+    <div id="services">
+      <h2 class="title">Mes services</h2>
+      <div class="container">
+        <div class="service">
+          <div class="service__description">
+            <h3>Shooting photo</h3>
+            <p>
+              Pour capturer vos moments les plus précieux et garder un souvenir
+              impérissable. Je me déplace en Île-de-France pour réaliser vos
+              photos
+            </p>
+          </div>
+          <div class="service__price">
+            <h4>350€/demi journée</h4>
+            <span>Matériel, déplacement inclus</span>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__description">
+            <h3>Retouches</h3>
+            <p>
+              Vous souhaitez retoucher vos photos pour un résultat professionnel
+              ? Bénéficier d’un rendu optimal pour vos publications
+            </p>
+          </div>
+          <div class="service__price">
+            <h4>50€/photo</h4>
+            <span>2 AR par photo</span>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__description">
+            <h3>Album photos</h3>
+            <p>
+              Partagez avec vos proches et vos clients les photos des moments
+              partagés ensemble à travers un album photo personnalisé
+            </p>
+          </div>
+          <div class="service__price">
+            <h4>400€ album A4</h4>
+            <span>30 pages recto/verso</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quote">
+      <figure>
+        <blockquote>
+          <h1 class="quote__text">
+            De manière inconsciente, je crois, je guette un regard, une
+            expression, des traits ou une nostalgie capable de résumer ou plus
+            exactement de révéler une vie
+          </h1>
+        </blockquote>
+        <figcaption class="quote__author">- Richard Avedon</figcaption>
+      </figure>
+    </div>
   </main>
   <footer>
     <div id="contact">
